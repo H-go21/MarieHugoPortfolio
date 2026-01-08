@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #111;
+    background-color: #fff;
+}
+
+/* NAVBAR */
+.navbar {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 85%;
+    padding: 1rem 2rem;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo {
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: #111;
+}
+
+.nav-right a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: #555;
+    font-weight: 400;
+}
+
+.nav-right a.active {
+    color: #111;
+    font-weight: 600;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero h1 {
+    font-weight: 600;
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-weight: 300;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* PAGES */
+.page {
+    padding: 160px 8% 80px;
+    text-align: center;
+}
+
+.page h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.page-intro {
+    max-width: 600px;
+    margin: 0 auto 60px;
+    font-weight: 300;
+    color: #555;
+}
+
+/* PAGE GALLERY */
+.gallery-page {
+    padding: 160px 8% 80px;
+}
+
+.gallery-page h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.page-intro {
+    max-width: 600px;
+    margin: 0 auto 80px;
+    font-weight: 300;
+    color: #555;
+    text-align: center;
+}
+
+/* TITRES DE PROJETS */
+.project-title {
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin: 40px 0 40px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+/* GRID GALLERY */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    border-radius: 2px;
+}
+
+.gallery img:hover {
+    opacity: 0.85;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 40px 0;
+    font-size: 0.8rem;
+    color: #888;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .nav-right a {
+        margin-left: 15px;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+}
+
+/* LIGHTBOX */
+.lightbox {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.92);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 3000;
+}
+
+.lightbox img {
+    max-width: 92%;
+    max-height: 92%;
+    object-fit: contain;
+}

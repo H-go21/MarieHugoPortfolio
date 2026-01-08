@@ -175,3 +175,41 @@ footer {
     max-height: 92%;
     object-fit: contain;
 }
+
+@media (max-width: 768px) {
+
+    /* NAVBAR MOBILE */
+    .navbar {
+        width: 92%;
+        padding: 0.8rem 1.2rem;
+        top: 10px;
+    }
+
+    .nav-right a {
+        margin-left: 15px;
+        font-size: 0.85rem;
+    }
+
+    /* TITRES */
+    .gallery-page h1 {
+        font-size: 20px;
+        margin-top: 60px;
+    }
+
+    .page-intro {
+        font-size: 0.9rem;
+        margin-bottom: 40px;
+    }
+
+    /* GALLERY */
+    .gallery {
+        gap: 16px;
+    }
+
+    /* FULLSCREEN IMAGE */
+    .lightbox img {
+        max-width: 95%;
+        max-height: 85%;
+    }
+}
+

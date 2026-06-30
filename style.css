@@ -10,6 +10,32 @@ body {
     background-color: #fff;
 }
 
+ /* CURSEUR CUSTOM */
+  .cursor {
+    position: fixed;
+    width: 8px;
+    height: 8px;
+    background: var(--or);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease, width 0.3s ease, height 0.3s ease, background 0.3s ease;
+  }
+  .cursor-ring {
+    position: fixed;
+    width: 32px;
+    height: 32px;
+    border: 1px solid rgba(212,160,23,0.4);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9998;
+    transform: translate(-50%, -50%);
+    transition: transform 0.12s ease, width 0.3s ease, height 0.3s ease;
+  }
+  body:hover .cursor { opacity: 1; }
+
+
 /* NAVBAR */
 .navbar {
     position: fixed;

@@ -11,7 +11,7 @@ body {
 }
 
  /* CURSEUR CUSTOM */
-  .cursor {
+.cursor {
     position: fixed;
     width: 8px;
     height: 8px;
@@ -22,7 +22,7 @@ body {
     transform: translate(-50%, -50%);
     transition: transform 0.1s ease, width 0.3s ease, height 0.3s ease, background 0.3s ease;
   }
-  .cursor-ring {
+.cursor-ring {
     position: fixed;
     width: 32px;
     height: 32px;
@@ -33,7 +33,7 @@ body {
     transform: translate(-50%, -50%);
     transition: transform 0.12s ease, width 0.3s ease, height 0.3s ease;
   }
-  body:hover .cursor { opacity: 1; }
+body:hover .cursor { opacity: 1; }
 
 
 /* NAVBAR */
